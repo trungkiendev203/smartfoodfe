@@ -523,7 +523,7 @@ body::before {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    zoom: 0.41;
+    zoom: 0.51;
 }
 
 .category-card:hover {
@@ -578,7 +578,7 @@ body::before {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     width: 68%;
     margin: 0 auto;
-    zoom: 0.64;
+    zoom: 0.51;
 }
 
 .product-card:hover {
