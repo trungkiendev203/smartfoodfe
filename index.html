@@ -3,366 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe Núi - Chạm vị caffe, chạm vào hồn núi</title>
-
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Coffe Núi - Chạm vị caffe, chạm vào hồn núi">
-    <meta property="og:description" content="Một không gian cà phê gần gũi, yên bình tại Ninh Hải, Ninh Thuận. Nơi thưởng thức hương vị mộc mạc và giao lưu âm nhạc ấm cúng.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Coffe Núi - Chạm vị caffe, chạm vào hồn núi">
-    <meta name="twitter:description" content="Một không gian cà phê gần gũi, yên bình tại Ninh Hải, Ninh Thuận. Nơi thưởng thức hương vị mộc mạc và giao lưu âm nhạc ấm cúng.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80">
-
-    <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- CSS -->
+    <title>SmartFood - Fresh & Healthy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <!-- Header -->
-    <header class="header" id="header">
-        <div class="logo">
-            <!-- Nếu có logo, đặt file logo.png cùng thư mục với index.html -->
-            <img src="logo.png" alt="Logo Coffe Núi" class="logo-img">
-            <span>Coffe Núi</span>
-        </div>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>SmartFood</h1>
+                    <p>Fresh & Healthy</p>
+                </div>
+            </div>
 
-        <nav class="navbar" id="navbar">
-            <a href="#home" class="nav-link active">Trang chủ</a>
-            <a href="#about" class="nav-link">Giới thiệu</a>
-            <a href="#space" class="nav-link">Không gian</a>
-            <a href="#drinks" class="nav-link">Thức uống</a>
-            <a href="#map" class="nav-link">Địa chỉ</a>
-            <a href="#contact" class="nav-link">Liên hệ</a>
-        </nav>
+            <div class="header-center">
+                <div class="category-dropdown">
+                    <span>Danh mục</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
 
-        <div class="menu-toggle" id="menuToggle">
-            <i class="fa-solid fa-bars"></i>
+            <div class="header-right">
+                <div class="header-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">1</span>
+                </div>
+                <div class="header-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="header-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-success">5</span>
+                </div>
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/40" alt="User">
+                    <span>Xin chào, Minh</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero section" id="home">
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-            <p class="hero-subtitle">Chạm vị caffe, chạm vào hồn núi</p>
-            <h1>Coffe Núi</h1>
-            <p class="hero-desc">
-                Một không gian cà phê gần gũi, yên bình tại Ninh Hải, Ninh Thuận.
-                Nơi bạn có thể thưởng thức hương vị caffe mộc mạc, ngắm nhìn không gian thoáng đãng
-                và tận hưởng những buổi giao lưu âm nhạc ấm cúng vào các tối trong tuần.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#drinks" class="btn btn-primary">
-                    <i class="fa-solid fa-mug-saucer"></i>
-                    Xem thức uống
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
                 </a>
-                <a href="#map" class="btn btn-outline">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Tìm đường
+                <a href="#" class="nav-item">
+                    <i class="fas fa-store"></i>
+                    <span>Cửa hàng</span>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Giới thiệu -->
-    <section class="about section reveal" id="about">
-        <div class="container about-container">
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Không gian Coffe Núi">
-            </div>
-
-            <div class="about-content">
-                <p class="section-subtitle">Về chúng tôi</p>
-                <h2 class="section-title">Coffe Núi</h2>
-                <p class="about-text">
-                    Coffe Núi là điểm đến dành cho những ai yêu thích sự bình yên,
-                    hương vị caffe gần gũi và không gian mang hơi thở thiên nhiên.
-                    Quán tọa lạc tại Tri Hải, Ninh Hải, Ninh Thuận, phù hợp để gặp gỡ bạn bè,
-                    thư giãn, làm việc hoặc tận hưởng những buổi tối âm nhạc nhẹ nhàng.
-                </p>
-
-                <div class="features">
-                    <div class="feature-item">
-                        <i class="fa-solid fa-mug-hot"></i>
-                        <h3>Caffe gần gũi</h3>
-                        <p>Hương vị caffe mộc mạc, dễ uống và phù hợp với nhiều khách hàng.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <i class="fa-solid fa-mountain-sun"></i>
-                        <h3>Không gian hồn núi</h3>
-                        <p>Không gian thoáng, gần gũi, mang cảm giác thư giãn và yên bình.</p>
-                    </div>
-
-                    <div class="feature-item">
-                        <i class="fa-solid fa-music"></i>
-                        <h3>Giao lưu âm nhạc</h3>
-                        <p>Có chương trình giao lưu âm nhạc vào thứ 2, 4, 6 và chủ nhật.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Không gian -->
-    <section class="space section reveal" id="space">
-        <div class="container">
-            <div class="section-heading">
-                <p class="section-subtitle">Không gian của chúng tôi</p>
-                <h2 class="section-title">Không gian Coffe Núi</h2>
-                <p class="section-desc">
-                    Coffe Núi mang đến cảm giác mộc mạc, thoáng đãng và gần gũi.
-                    Mỗi góc nhỏ đều phù hợp để ngồi thư giãn, trò chuyện, làm việc hoặc tận hưởng
-                    không khí nhẹ nhàng của vùng biển Ninh Thuận.
-                </p>
-            </div>
-
-            <div class="space-grid">
-                <div class="space-card">
-                    <img src="./trongnha.png" alt="Không gian trong nhà">
-                    <div class="space-info">
-                        <i class="fa-solid fa-mug-hot"></i>
-                        <h3>Không gian trong nhà</h3>
-                    </div>
-                </div>
-
-                <div class="space-card">
-                    <img src="./thugian.png" alt="Góc thư giãn">
-                    <div class="space-info">
-                        <i class="fa-solid fa-book"></i>
-                        <h3>Góc thư giãn</h3>
-                    </div>
-                </div>
-
-                <div class="space-card">
-                    <img src="./image.png" alt="Khu vực ngoài trời">
-                    <div class="space-info">
-                        <i class="fa-solid fa-mountain-sun"></i>
-                        <h3>Khu vực ngoài trời</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-benefits">
-                <div class="benefit-item">
-                    <i class="fa-solid fa-wind"></i>
-                    <div>
-                        <h3>Không gian thoáng</h3>
-                        <p>Phù hợp để thư giãn, trò chuyện và tận hưởng không khí nhẹ nhàng.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <i class="fa-solid fa-sun"></i>
-                    <div>
-                        <h3>Ánh sáng tự nhiên</h3>
-                        <p>Tận dụng ánh sáng dịu nhẹ, tạo cảm giác dễ chịu khi ngồi tại quán.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <i class="fa-solid fa-music"></i>
-                    <div>
-                        <h3>Âm nhạc cuối ngày</h3>
-                        <p>Các buổi giao lưu âm nhạc giúp không gian thêm ấm cúng và gần gũi.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Thức uống -->
-    <section class="drinks section reveal" id="drinks">
-        <div class="container">
-            <div class="section-heading">
-                <p class="section-subtitle">Hương vị dành cho bạn</p>
-                <h2 class="section-title">Thức uống Coffe Núi</h2>
-                <p class="section-desc">
-                    Thưởng thức những ly caffe đậm vị, các món trà thanh mát và đồ uống phù hợp
-                    cho những buổi gặp gỡ, thư giãn hoặc lắng nghe âm nhạc.
-                </p>
-            </div>
-
-            <div class="drink-grid">
-                <div class="drink-card">
-                    <div class="drink-image">
-                        <img src="./matcha.png" alt="Matcha Latte">
-                    </div>
-                    <div class="drink-content">
-                        <i class="fa-solid fa-leaf"></i>
-                        <h3>Matcha Latte</h3>
-                        <p>Thơm lừng hương trà xanh hòa quyện cùng sữa tươi béo mịn nhẹ nhàng.</p>
-                        <span>Từ 35.000đ</span>
-                    </div>
-                </div>
-
-                <div class="drink-card">
-                    <div class="drink-image">
-                        <img src="./anh1khoaimon.png" alt="Latte khoai môn">
-                    </div>
-                    <div class="drink-content">
-                        <i class="fa-solid fa-mug-hot"></i>
-                        <h3>Latte khoai môn</h3>
-                        <p>Hương vị thơm bùi của khoai môn hòa quyện cùng sữa tươi béo ngậy đầy lôi cuốn.</p>
-                        <span>Từ 30.000đ</span>
-                    </div>
-                </div>
-
-                <div class="drink-card">
-                    <div class="drink-image">
-                        <img src="./mayhong.png" alt="Đồ uống đá xay">
-                    </div>
-                    <div class="drink-content">
-                        <i class="fa-solid fa-glass-water"></i>
-                        <h3>Trà Sữa Mây Hồng</h3>
-                        <p>Trà thơm nhẹ, béo ngậy, phù hợp để thưởng thức cùng bạn bè.</p>
-                        <span>Từ 30.000đ</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chương trình âm nhạc -->
-    <section class="music-section section reveal" id="music">
-        <div class="container">
-            <div class="section-heading">
-                <p class="section-subtitle">Giao lưu âm nhạc</p>
-                <h2 class="section-title">Âm nhạc tại Coffe Núi</h2>
-                <p class="section-desc">
-                    Vào các tối thứ 2, thứ 4, thứ 6 và chủ nhật, Coffe Núi có chương trình
-                    giao lưu âm nhạc từ 18:00 đến 22:00. Đây là khoảng thời gian phù hợp để gặp gỡ,
-                    thư giãn và cùng nhau tận hưởng không khí ấm cúng tại quán.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bản đồ -->
-    <section class="map-section section reveal" id="map">
-        <div class="container map-container">
-            <div class="map-info">
-                <p class="section-subtitle">Địa chỉ</p>
-                <h2 class="section-title">Tìm đường đến Coffe Núi</h2>
-
-                <div class="contact-list">
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Tri Hải, Ninh Hải, Ninh Thuận
-                    </p>
-
-                    <p>
-                        <i class="fa-solid fa-clock"></i>
-                        Mở cửa: 07:00 - 22:00, từ thứ 2 đến chủ nhật
-                    </p>
-
-                    <p>
-                        <i class="fa-solid fa-music"></i>
-                        Giao lưu âm nhạc: thứ 2, thứ 4, thứ 6 và chủ nhật, từ 18:00 - 22:00
-                    </p>
-
-                    <p>
-                        <i class="fa-solid fa-phone"></i>
-                        0357 544 320
-                    </p>
-
-                    <p>
-                        <i class="fa-brands fa-facebook"></i>
-                        Facebook: Coffe Núi
-                    </p>
-                </div>
-
-                <a href="https://maps.app.goo.gl/4Bp4YwatQWH8C9Nx8?g_st=afm"
-                   target="_blank"
-                   class="btn btn-primary">
-                    <i class="fa-solid fa-location-arrow"></i>
-                    Chỉ đường trên Google Maps
+                <a href="#" class="nav-item">
+                    <i class="fas fa-th"></i>
+                    <span>Danh mục</span>
                 </a>
-            </div>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Flash Sale</span>
+                    <span class="badge-hot">HOT</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Yêu thích</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Đơn hàng</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant</span>
+                    <span class="badge-new">New</span>
+                </a>
+            </nav>
 
-            <div class="map-box">
-                <iframe src="https://maps.google.com/maps?q=Cafe+N%C3%BAi+-+View+C%C3%A1nh+%C4%90%E1%BB%93ng+%C4%90i%E1%BB%87n+Gi%C3%B3,+Ninh+H%E1%BA%A3i&hl=vi&z=17&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Liên hệ -->
-    <section class="contact section reveal" id="contact">
-        <div class="container contact-container">
-            <div class="contact-content">
-                <p class="section-subtitle">Liên hệ</p>
-                <h2 class="section-title">Liên hệ với Coffe Núi</h2>
-                <p>
-                    Để đặt bàn, hỏi thông tin chương trình âm nhạc hoặc cần hỗ trợ,
-                    bạn có thể liên hệ trực tiếp qua số điện thoại của quán.
-                </p>
-
-                <div class="contact-quick">
-                    <p><i class="fa-solid fa-phone"></i> 0357 544 320</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Tri Hải, Ninh Hải, Ninh Thuận</p>
-                    <p><i class="fa-solid fa-clock"></i> 07:00 - 22:00, thứ 2 đến chủ nhật</p>
-                    <p><i class="fa-solid fa-music"></i> Âm nhạc: thứ 2, 4, 6 và chủ nhật, 18:00 - 22:00</p>
+            <!-- Chatbot -->
+            <div class="chatbot">
+                <div class="custom-speech-bubble" style="background: white; padding: 14px 18px; border-radius: 20px; font-size: 14px; color: #1f2937; line-height: 1.6; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: relative; margin-bottom: 8px; transform: translateX(20%); z-index: 2; display: inline-block; width: 85%;">
+                    Xin chào! 👋<br>
+                    Mình có thể giúp gì<br>
+                    cho bạn hôm nay?
+                    <div style="position: absolute; bottom: -12px; left: 30px; border-width: 12px 12px 0; border-style: solid; border-color: white transparent transparent transparent; filter: drop-shadow(0 2px 1px rgba(0,0,0,0.02));"></div>
+                </div>
+                <div class="chatbot-message" style="padding: 0; background: none; text-align: center; transform: translateX(-20%);">
+                    <img src="./chatbotxinchao.png" alt="Bot Image" style="max-width: 100%; display: inline-block;">
                 </div>
             </div>
+        </aside>
 
-            <form class="contact-form">
-                <input type="text" placeholder="Họ và tên">
-                <input type="text" placeholder="Số điện thoại">
-                <textarea rows="5" placeholder="Nội dung cần liên hệ"></textarea>
-                <button type="button" class="btn btn-primary">Gửi liên hệ</button>
-            </form>
-        </div>
-    </section>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Banner -->
+            <section class="hero-banner" style="padding: 0; background: none;">
+                <img src="./image copy.png" alt="Hero Banner" style="width: 100%; height: auto; border-radius: 16px; object-fit: cover; display: block;">
+            </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo Coffe Núi" class="logo-img">
-                    <span>Coffe Núi</span>
+            <!-- Categories -->
+            <section class="categories">
+                <h3>Danh mục nổi bật</h3>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&q=80&w=150" alt="Rau củ quả">
+                        </div>
+                        <p>Rau củ quả</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&q=80&w=150" alt="Thịt cá">
+                        </div>
+                        <p>Thịt, cá, hải sản</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=150" alt="Trái cây">
+                        </div>
+                        <p>Trái cây</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=150" alt="Sữa & Trứng">
+                        </div>
+                        <p>Sữa & Trứng</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&q=80&w=150" alt="Đồ uống">
+                        </div>
+                        <p>Đồ uống</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=150" alt="Đồ ăn nhanh">
+                        </div>
+                        <p>Đồ ăn nhanh</p>
+                    </div>
                 </div>
-                <p>Chạm vị caffe, chạm vào hồn núi.</p>
-            </div>
+            </section>
 
-            <div class="footer-links">
-                <h3>Liên kết</h3>
-                <a href="#home">Trang chủ</a>
-                <a href="#about">Giới thiệu</a>
-                <a href="#space">Không gian</a>
-                <a href="#drinks">Thức uống</a>
-                <a href="#map">Địa chỉ</a>
-            </div>
+            <!-- Products -->
+            <section class="products">
+                <h3>Sản phẩm gợi ý cho bạn</h3>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-badge hot">HOT</div>
+                        <button class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6fac6?auto=format&fit=crop&q=80&w=200" alt="Táo đỏ nhập khẩu" style="border-radius: 12px;">
+                        </div>
+                        <div class="product-info">
+                            <h4>Táo đỏ nhập khẩu</h4>
+                            <div class="product-price">
+                                <span class="price-current">85.000đ</span>
+                                <span class="price-old">165.000đ</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="btn-add-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="footer-social">
-                <h3>Theo dõi chúng tôi</h3>
-                <div>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <button class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&q=80&w=200" alt="Bông cải xanh" style="border-radius: 12px;">
+                        </div>
+                        <div class="product-info">
+                            <h4>Bông cải xanh Đà Lạt</h4>
+                            <div class="product-price">
+                                <span class="price-current">35.000đ</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="btn-add-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-badge sale">-50%</div>
+                        <button class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&q=80&w=200" alt="Cá hồi phi lê" style="border-radius: 12px;">
+                        </div>
+                        <div class="product-info">
+                            <h4>Cá hồi phi lê</h4>
+                            <div class="product-price">
+                                <span class="price-current">250.000đ</span>
+                                <span class="price-old">500.000đ</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="btn-add-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <button class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&q=80&w=200" alt="Sữa tươi Vinamilk" style="border-radius: 12px;">
+                        </div>
+                        <div class="product-info">
+                            <h4>Sữa tươi Vinamilk</h4>
+                            <div class="product-price">
+                                <span class="price-current">28.000đ</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="btn-add-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <button class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1614138139634-11a5a0bd0b8b?auto=format&fit=crop&q=80&w=200" alt="Đỗ hộp" style="border-radius: 12px;">
+                        </div>
+                        <div class="product-info">
+                            <h4>Đỗ hộp</h4>
+                            <div class="product-price">
+                                <span class="price-current">32.000đ</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <button class="btn-add-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Giao hàng nhanh</h4>
+                        <p>Trong 2h</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Đổi trả dễ dàng</h4>
+                        <p>Trong 7 ngày</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Sản phẩm chất lượng</h4>
+                        <p>Cam kết chính hãng</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Thanh toán an toàn</h4>
+                        <p>Bảo mật 100%</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- AI Assistant Chat -->
+        <aside class="ai-chat">
+            <div class="chat-header">
+                <div class="chat-header-left">
+                    <div class="chat-avatar" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                        <img src="./avatarbotchat.png" alt="Bot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <span>AI Assistant</span>
+                </div>
+                <div class="chat-header-right">
+                    <button class="chat-minimize"><i class="fas fa-minus"></i></button>
+                    <button class="chat-close"><i class="fas fa-times"></i></button>
                 </div>
             </div>
-        </div>
+            <div class="chat-body">
+                <div class="chat-message bot">
+                    <div class="message-avatar" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none;">
+                        <img src="./avatarbotchat.png" alt="Bot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="message-content">
+                        <p>Xin chào! 👋</p>
+                        <p>Tôi là AI Assistant của Smart Food.</p>
+                        <p>Bạn cần hỗ trợ gì?</p>
+                        <span class="message-time">14:33</span>
+                    </div>
+                </div>
+                <div class="chat-message user">
+                    <div class="message-content">
+                        <p>Cho mình gợi ý món ăn healthy nhé?</p>
+                        <span class="message-time">16:17 <i class="fas fa-check-double"></i></span>
+                    </div>
+                </div>
+                <div class="chat-message bot">
+                    <div class="message-avatar" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none;">
+                        <img src="./avatarbotchat.png" alt="Bot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="message-content">
+                        <p>Dưới đây là một số gợi ý món ăn healthy cho bạn:</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle soft-check"></i> Salad ức gà rau củ</li>
+                            <li><i class="fas fa-check-circle soft-check"></i> Cá hồi nướng sốt chanh</li>
+                            <li><i class="fas fa-check-circle soft-check"></i> Súp bí đỏ giảm cân</li>
+                            <li><i class="fas fa-check-circle soft-check"></i> Yến mạch trái cây</li>
+                        </ul>
+                        <span class="message-time">16:33</span>
+                    </div>
+                </div>
+                <div class="chat-message user">
+                    <div class="message-content">
+                        <p>Cá hồi phi lê luộn dùng có giá bao nhiêu?</p>
+                        <span class="message-time">16:37 <i class="fas fa-check-double"></i></span>
+                    </div>
+                </div>
+                <div class="chat-message bot">
+                    <div class="message-avatar" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none;">
+                        <img src="./avatarbotchat.png" alt="Bot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="message-content">
+                        <p>Cá hồi phi lê luộn dùng có giá 250.000đ (giảm 10%) a.</p>
+                        <span class="message-time">16:38</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Nhập tin nhắn...">
+                <button class="chat-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </aside>
+    </div>
 
-        <p class="copyright">© 2026 Coffe Núi. All rights reserved.</p>
-    </footer>
-
-    <!-- Back to top -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
