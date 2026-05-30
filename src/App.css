@@ -512,8 +512,8 @@ body::before {
 
 .category-card {
     background: white;
-    border-radius: 12px;
-    padding: 8px;
+    border-radius: 8px;
+    padding: 4px;
     text-align: center;
     cursor: pointer;
     transition: all 0.2s;
@@ -521,9 +521,8 @@ body::before {
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    max-width: 80px;
     margin: 0 auto;
-    zoom: 0.51;
 }
 
 .category-card:hover {
@@ -545,7 +544,7 @@ body::before {
 }
 
 .category-card p {
-    font-size: 13px;
+    font-size: 9px;
     color: #374151;
     font-weight: 500;
 }
@@ -565,20 +564,18 @@ body::before {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
+    gap: 8px;
 }
 
 .product-card {
     background: white;
-    border-radius: 12px;
-    padding: 12px;
+    border-radius: 10px;
+    padding: 8px;
     position: relative;
     cursor: pointer;
     transition: all 0.2s;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    width: 68%;
-    margin: 0 auto;
-    zoom: 0.51;
+    width: 100%;
 }
 
 .product-card:hover {
