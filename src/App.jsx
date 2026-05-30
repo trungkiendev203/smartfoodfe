@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
-import AIChat from './components/AIChat';
 
 function App() {
   const [cartCount, setCartCount] = useState(5);
@@ -48,8 +47,6 @@ function App() {
           onToggleWishlist={handleToggleWishlist}
           onAddToCart={handleAddToCart}
         />
-
-        <AIChat />
       </div>
     </div>
   );
